@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hojas de Vida de Estudiantes - Campus Virtual</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/Escudo_unimag_sm.png" alt="Campus Virtual Logo" class="logo">
+                <span class="header-title">PROGRAMACIÓN WEB</span>
+            </div>
+            <nav class="header-icons">
+                <a href="#" class="icon-link" title="Calendario"><i class="fas fa-th"></i></a>
+                <a href="#" class="icon-link" title="Mensajes"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="icon-link" title="Comentarios"><i class="fas fa-comment"></i></a>
+                <a href="#" class="icon-link" title="Notificaciones"><i class="fas fa-bell"></i></a>
+                <div class="user-profile">
+                    <img src="images/profile-photo.png" alt="Julio Alfonso Curiel Guerra" class="user-avatar">
+                    <span class="user-name">JULIO ALFONSO CURIEL GUERRA</span>
+                </div>
+                <div class="header-dropdown">
+                    <a href="#" class="icon-link" title="Configuración"><i class="fas fa-cog"></i></a>
+                    <ul class="header-dropdown-content">
+                        <li><a href="#">Accesibilidad</a></li>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Informes</a></li>
+                        <li><a href="#">Idiomas</a></li>
+                        <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li><a href="#">Contenido</a></li>
+            <li><a href="#">Asignaciones</a></li>
+            <li><a href="#">Foros</a></li>
+            <li><a href="#">Cuestionarios</a></li>
+            <li><a href="#">Progreso de la clase</a></li>
+            <li><a href="#">Valoraciones</a></li>
+            <li class="dropdown">
+                <a href="#">Evaluación <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Exámenes</a></li>
+                    <li><a href="#">Calificaciones</a></li>
+                    <li><a href="#">Rúbricas</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Herramientas <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Calendario</a></li>
+                    <li><a href="#">Mensajes</a></li>
+                    <li><a href="#">Ajustes</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="students-section">
+            <h1 class="page-title">Hojas de Vida de Estudiantes</h1>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+                <a href="#" class="search-options">Mostrar opciones de búsqueda</a>
+            </div>
+
+            <!-- Student Cards Grid -->
+            <div class="students-grid">
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Julio Curiel </h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <a href="#" class="btn-view" id="btn-julio">Ver</a>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Daniel Jimenez</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view" id="btn-daniel">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Yulieth Ortega</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view" id="btn-yulieth">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Juan Gonzalez</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Ana Lopez</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Jose Orozco</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Sara Jimenez</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Jordan Caro</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <div class="student-photo-icon"><i class="fas fa-user-circle"></i></div>
+                    <h2 class="student-name">Shania Russo</h2>
+                    <p class="student-role">Estudiante de Programación Web</p>
+                    <button class="btn-view">Ver</button>
+                    <div class="social-icons">
+                        <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Ready Button -->
+            <div class="ready-section">
+                <button class="btn-ready">Listo</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

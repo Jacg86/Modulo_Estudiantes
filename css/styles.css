@@ -1,0 +1,478 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-link {
+    color: #666;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #0066A1;
+}
+
+/* Header Dropdown */
+.header-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header-dropdown-content {
+    display: none;
+    position: absolute;
+    right: -10px;
+    top: 30px;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+}
+
+.header-dropdown-content li {
+    width: 100%;
+}
+
+.header-dropdown-content li a {
+    padding: 10px 16px;
+    color: #333;
+    font-size: 13px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header-dropdown-content li a:hover {
+    background-color: #f5f5f5;
+    color: #0066A1;
+}
+
+.header-dropdown-content.show {
+    display: block;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Navigation Menu Styles */
+.main-nav {
+    background-color: #0066A1;
+    padding: 0;
+}
+
+.nav-menu {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 12px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #004B87;
+}
+
+.nav-menu li.dropdown a i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #035b96;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content li a {
+    padding: 10px 16px;
+    color: #ffffff;
+    font-size: 13px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #171d22;
+}
+
+/* Show dropdown on hover */
+.nav-menu li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.students-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #0066A1;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e0e0e0;
+}
+
+.search-button i {
+    color: #666;
+}
+
+.search-options {
+    color: #0066A1;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.search-options:hover {
+    text-decoration: underline;
+}
+
+/* Student Cards Grid */
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.student-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.student-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+}
+
+.student-photo-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-photo-icon i {
+    font-size: 100px;
+    color: #ccc;
+}
+
+.student-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.student-role {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.btn-view {
+    display: inline-block;
+    background-color: #0066A1;
+    color: #ffffff;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-view:hover {
+    background-color: #004B87;
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+.btn-view:active {
+    transform: scale(0.98);
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+.social-link.linkedin {
+    background-color: #0077B5;
+}
+
+.social-link.twitter {
+    background-color: #1DA1F2;
+}
+
+.social-link.facebook {
+    background-color: #1877F2;
+}
+
+/* Ready Button Section */
+.ready-section {
+    text-align: left;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn-ready {
+    background-color: #0066A1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-ready:hover {
+    background-color: #004B87;
+    transform: scale(1.05);
+}
+
+.btn-ready:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .students-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .students-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-options {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .students-section {
+        padding: 20px 15px;
+    }
+
+    .student-card {
+        padding: 20px;
+    }
+
+    .nav-menu li a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
