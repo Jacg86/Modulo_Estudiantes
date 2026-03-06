@@ -10,6 +10,8 @@ Modulo_Estudiantes/
 ├── index.html          # Página principal con estructura HTML5 semántica
 ├── css/
 │   └── styles.css      # Estilos CSS externos
+├── js/
+│   └── main.js         # Lógica JavaScript para enlaces a las hojas de vida
 ├── images/             # Directorio para imágenes
 │   ├── Escudo_unimag_sm.png    # Logo del campus virtual
 │   └── profile-photo.png       # Avatar del usuario
@@ -34,7 +36,7 @@ Modulo_Estudiantes/
 2. **Menú de navegación**: Barra azul con enlaces del curso
 3. **Barra de búsqueda**: Campo de búsqueda con opciones
 4. **Grid de estudiantes**: 3 columnas (responsive)
-5. **Tarjetas de estudiante**: Icono de usuario, nombre, rol, botón "Ver" y redes sociales
+5. **Tarjetas de estudiante**: Icono de usuario, nombre, rol, botón "Ver" (redirige a la hoja de vida) y redes sociales
 
 ## Instrucciones de Uso
 
@@ -83,6 +85,7 @@ El diseño se adapta a diferentes tamaños de pantalla:
 
 - HTML5
 - CSS3
+- JavaScript (Vanilla)
 - Font Awesome 6.0 (iconos)
 
 ## Estudiantes del Curso
@@ -104,3 +107,8 @@ Actualmente el módulo muestra las siguientes personas:
 - Para usar fotos reales, deben ser cuadradas para mejor visualización
 - Tamaño para fotos: 200x200px mínimo
 - Formato: JPG o PNG
+
+## Repositorio
+
+El código fuente de este proyecto se encuentra alojado en GitHub:
+[Modulo_Estudiantes](https://github.com/Jacg86/Modulo_Estudiantes)
